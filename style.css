@@ -1,0 +1,474 @@
+/* DEFUALT CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearFix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* HEADER CSS START */
+.main_header{
+   
+}
+.header_left{
+    width: 30%;
+    float: left;
+}
+.header_left img{
+   height: 50px;
+    margin-left: 60px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.header_left span{
+    font-size: 24px;
+    display: inline-block;
+   margin-top: 10px;
+  
+}
+.header_menu{
+    width: 50%;
+    float: left;
+  
+}
+
+.header_menu ul{
+    list-style: none;
+   text-align: center;
+}
+.header_menu ul li{
+    display: inline-block;
+    line-height: 40px;
+    transition: .4s;
+}
+.header_menu ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    font-size: 20px;
+   color: #111;
+}
+.header_menu ul li:hover{
+    background: rgba(255, 166, 0, 0.164);
+}
+.header_menu ul li{
+    position: relative;
+   
+}
+.header_menu ul li ul li{
+    width: 100%;
+   text-align: left;
+}
+.header_menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: rgba(128, 128, 128, 0.158);
+    text-align: left;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: .4s;
+    z-index: 2;
+}
+.header_menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+.header_button{
+    float: left;
+    width: 18%;
+   text-align: center;
+    margin-top: 10px;
+}
+.header_button .header_btn{
+    padding: 12px 30px;
+    background-color: #0e253c !important;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+    border-color: #006161;
+    z-index: 1;
+    display: inline-block;
+}
+.header_button .header_btn::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #4b5baa;
+    border-color: #4b5baa;
+    border-radius: 5px;
+    transition: .5s;
+    z-index: -1;
+}
+.header_button .header_btn:hover::after{
+    width: 100%;
+}
+/* HEADER CSS END */
+
+/* BANNER SECTION CSS START */
+.banner{
+    background: url(img/banner.jpg);
+    background-position: top center;
+    background-size: cover;
+   padding: 200px 0;
+   position: relative;
+   z-index: 1;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   background-color: rgba(128, 128, 128, 0.664);
+    z-index: -1;
+}
+.banner_caption{
+    text-align: center;
+}
+
+.banner_caption h2{
+    font-size: 35px;
+    color: #fff;
+}
+.banner_caption h1{
+    font-size: 45px;
+    padding: 10px 0;
+    color: #fff;
+}
+.banner_caption button{
+    padding: 15px 50px;
+    background-color: #fff;
+    border: none;
+    margin-right: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/* BANNER SECTION CSS END */
+
+/* BANNER BOTTOM CSS START */
+.banner_bottom{
+   
+    background-color: rgba(210, 180, 140, 0.082);
+   padding-bottom: 40px;
+}
+.banner_bottom .left_site{
+    float: left;
+    width: 45%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.banner_bottom .left_site img{
+    width: 100%;
+    height: 400px;
+}
+.banner_bottom .right_site{
+    float: right;
+    width: 50%;
+    margin-top: 70px;
+}
+.banner_bottom h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.banner_bottom p{
+    font-size: 22px;
+   
+}
+/* BANNER BOTTOM CSS END */
+/* SERVICE SECTION CSS START */
+.appamp_caption{
+    text-align: center;
+    padding: 50px 0;
+}
+.service_box{
+    width: 30%;
+    display: inline-block;
+    margin-left: 30px;
+   box-shadow: 0px 0px 12px rgba(128, 128, 128, 0.158);
+   margin-bottom: 20px;
+   padding: 30px;
+   box-sizing: border-box;
+   transition: .4s;
+}
+.service_box span{
+    font-size: 30px;
+    color: #6278df;
+    display: inline-block;
+    margin-right: 10px;
+}
+.service_box h3{
+    margin-bottom: 20px;
+    font-size: 25px;
+    display: inline-block;
+}
+.service_box p{
+    width: 300px;
+}
+.service_box:hover{
+    transform: scale(.9);
+   
+}
+
+/* SERVICE SECTION CSS END */
+
+/* ABOUT SECTION CSS START */
+.about_section{
+    padding-bottom: 50px;
+    display: inline-block;
+}
+.about_box{
+    width: 31%;
+    float: left;
+    margin-left: 20px;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.1);
+   
+}
+.about_box:hover .about_heading{
+    background-color: #6278df;
+    color: #fff;
+}
+.about_box:hover .header_btn{
+    background-color: #6278df;
+    color: #fff;
+    border-radius: 5px;
+}
+.about_heading{
+    padding: 50px;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.144);
+    box-sizing: border-box;
+    transition: .5s;
+}
+.about_content{
+    padding: 20px 0;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.about_heading h4{
+    font-size: 22px;
+}
+.about_heading h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.about_heading h1{
+    font-size: 35px;
+}
+.about_heading h1 span {
+    font-size: 18px;
+   display: inline-block;
+    padding: 25px 0;
+}
+.about_heading h3{
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.about_heading p{
+    font-size: 20px;
+   
+}
+.about_content ul li{
+    margin-bottom: 20px;
+    list-style: none;
+    font-size: 20px;
+    color: rgb(128 128 128 / 81%);
+}
+.about_content ul .fa{
+    font-size: 28px;
+    margin-right: 15px;
+    color: #6278df;
+}
+.about_content .header_btn{
+    padding: 15px 30px;
+    display: block;
+   border: none;
+    color: rgba(128, 128, 128, 0.699);
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.3);
+    display: inline-block;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-left: 30px;
+    transition: .5s;
+   
+}
+/* ABOUT SECTION CSS END */
+
+/* TEAM SECTION CSS STARAT */
+.team_section{
+    padding: 30px 0;
+}
+.team_caption h2 {
+   margin-bottom: 50px;
+    font-size: 35px;
+  text-align: center;
+  
+}
+.team_img{
+    width: 23%;
+    display: inline-block;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.3);
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.team_img img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.team_child{
+   margin-left: 30px;
+}
+.team_img h2{
+    font-size: 22px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.team_img h6{
+    margin-left: 30px;
+   color: gray;
+}
+/* TEAM SECTION CSS END */
+/* NEWS SECTION CSS START */
+.news_section{
+    background-color: #4b5baa0d;
+}
+.appamp_caption .news_input{
+    border: none;
+    padding: 20px 40px;
+   margin-right: 20px;
+   border: 1px solid #e4e4e4;
+   border-radius: 10px;
+}
+
+.appamp_caption .header_btn{
+    margin-top: 20px;
+    padding: 20px 70px;
+    color: #fff;
+    border: none;
+    background-color: #4b5baa;
+    border-radius: 5px;
+}
+/* NEWS SECTION CSS END */
+/* REPORT SECTION CSS START */
+.report_title h2{
+    float: left;
+    width: 45%;
+    padding: 50px 0;
+    font-size: 50px;
+    margin-left: 30px;
+}
+.report_title p{
+    float: right;
+    width: 45%;
+    padding: 50px 0;
+   
+}
+.report_box{
+   width: 45%;
+   display: inline-block;
+   box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.3);
+   margin-left: 30px;
+   margin-bottom: 50px;
+}
+.report_box img{
+    width: 250px;
+    float: left;
+}
+.report_box .report_subTitle{
+    width: 280px;
+    float: right;
+}
+.report_box h1{
+    font-size: 30px;
+}
+.report_box p{
+    width: 250px;
+    margin-top: 30px;
+}
+/* REPORT SECTION CSS END */
+
+/* FEADBACK SECTION CSS START */
+.feadback .feadback_box{
+    width: 31%;
+    display: inline-block;
+    padding: 50px;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.3);
+    margin-bottom: 50px;
+}
+.feadback_box p{
+    font-size: 20px;
+    line-height: 40px;
+   
+}
+.f_box{
+    margin-left: 20px;
+}
+
+/* FEADBACK SECTION CSS END */
+
+/* CONTACT US SECSTION START */
+.contact_left{
+    width: 45%;
+    float: left;
+}
+.contact_left img{
+    width: 100%;
+}
+.contact_right{
+    width: 45%;
+    float: right;
+}
+.contact_right input{
+    width: 92%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border: 1px solid #e4e4e4;
+}
+.contact_right .us_input{
+    width: 45%;
+    display: inline-block;
+    margin-right: 10px;
+}
+.contact_right textarea{
+    width: 92%;
+    border: 1px solid #e4e4e4;
+}
+.contact_right .contact_btn{
+   padding: 15px 80px;
+   background-color: #4b5baa;
+   color: #fff;
+   border-radius: 5px;
+   margin-top: 10px;
+   border: none;
+   margin-bottom: 50px;
+}
+/* CONTACT US SECSTION END */
+
+/* FOOTER SECTION CSS START */
+.footer{
+   
+    background-color: #8080802b;
+    text-align: center;
+}
+.footer p{
+    font-size: 18px;
+    line-height: 40px;
+}
+/* FOOTER SECTION CSS END */
